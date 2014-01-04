@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{pageTitle}}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <script type="text/javascript" src="/js/jq.js"></script>
+        <script type="text/javascript" src="/js/sb-1.2.0.js"></script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-44319834-1', 'chopsticking.herokuapp.com');
+          ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body>
+     
+    <div id="wrap">
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="container">
+            <div class="page-header">
+                <a href= '/'><img class = "logo" src ="/img/chopsticking logo.png" /></a>
+                <p>Practice & Play For Your Chopstick Skill</p>
+                <div id = "contact" style = "float: left; margin:10px;"><a href = "/contact"><span style = "background- color: #ff0000; color:#ffffff; font-size: 10px;">CONTACT INFO</span></a></div>
+                <div id = "press" style = "float: left; margin:10px;"><a href = "/press"><span style = "background- color: #ff0000; color:#ffffff; font-size: 10px;">PRESS</span></a></div>
+                <div id = "photo" style = "float: left; margin:10px;"><a href = "/press"><span style = "background- color: #ff0000; color:#ffffff; font-size: 10px;">PHOTO</span></a></div>
+                <div id = "gotoplay" style = "float: right; margin:10px;"><a href = "/play"><span style = "background- color: #ff0000; color:#ffffff; font-size: 10px;">GO TO PLAY</span></a></div>
+            </div>
+
+            <div>
+                 {{{yield}}}
+            </div>
+        </div>
+        
+        <div id="push"></div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <p class="muted credit">"Chopsticking" is created by <a href = "http://jessjung.com"> Jess Jiyoung Jung</a> and <a href = " http://itschristinith.com/"> Christina Carter</a>, who are studying in NYU ITP.</p>
+            </div>
+    </div>
+
+    <!--
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="/js/vendor/bootstrap.min.js"></script>
+
+        <script src="/js/main.js"></script>
+    -->
+
+    </body>
+</html>
